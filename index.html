@@ -53,8 +53,8 @@
             };
 
             return (
-                <div class="w-screen h-screen grid place-items-center  ">
-                    <div class="bg-black max-w-[500px] rounded-md">
+                <div class="w-screen h-screen grid place-items-center">
+                    <div class="bg-black max-w-[500px] h-[250px] px-3 border border-white rounded-md flex-intiial">
                         <div>
                         <h1 class="text-xl items-center text-center content-center  py-4 ">Weather App</h1>
                         <form onSubmit={fetchWeather}>
@@ -75,7 +75,7 @@
                         <div class="z-10">
                             {error && <p style={{color: 'red'}}>{error}</p>}
                             {weather && (
-                                <div class="text-white p-5">
+                                <div class="text-white">
                                     <h2>Weather in {weather.name}</h2>
                                     <p>Temperature: {weather.main.temp} °C</p>
                                     <p>Weather: {weather.weather[0].description}</p>
